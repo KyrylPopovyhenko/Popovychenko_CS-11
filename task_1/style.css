@@ -7,22 +7,95 @@
 }
 
 .box {
-  border: 1px black solid;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
   text-align: center;
+  flex-direction: column;
+  background-color: rgb(119, 0, 255);
+  color: white;
 }
 
-#H {
+.box > div:first-child {
+  text-align: left;
+}
+
+.box > div:nth-last-child(2) {
+  font-size: 36px;
+  font-weight: 200;
+}
+
+.box > div:last-child {
+  font-size: 10px;
+}
+
+.first {
   grid-column: 1;
 }
 
-#He {
+.second {
+  grid-column: 2;
+}
+
+.third {
+  grid-column: 3;
+}
+
+.fourth {
+  grid-column: 4;
+}
+
+.fifth {
+  grid-column: 5;
+}
+
+.sixth {
+  grid-column: 6;
+}
+
+.seventh {
+  grid-column: 7;
+}
+
+.eighth {
+  grid-column: 8;
+}
+
+.ninth {
+  grid-column: 9;
+}
+
+.tenth {
+  grid-column: 10;
+}
+
+.eleventh {
+  grid-column: 11;
+}
+
+.twelfth {
+  grid-column: 12;
+}
+
+.thirteenth {
+  grid-column: 13;
+}
+
+.fourteenth {
+  grid-column: 14;
+}
+
+.fifteenth {
+  grid-column: 15;
+}
+
+.sixteenth {
+  grid-column: 16;
+}
+
+.seventeenth {
+  grid-column: 17;
+}
+
+.eighteenth {
   grid-column: 18;
-}
-
-#Li {
-  grid-column: 1;
-}
-
-#Na {
-  grid-column: 1;
 }

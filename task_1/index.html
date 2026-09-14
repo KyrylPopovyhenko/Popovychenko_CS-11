@@ -1,34 +1,552 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="style.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <div class="table">
-    <div id="H" class="box">
-      <div>1</div>
-      <div>H</div>
-      <div>Гідроген</div>
-    </div>
-    <div id="He" class="box">
-      <div>2</div>
-      <div>He</div>
-      <div></div>
-    </div>
-    <div id="Li" class="box">
-      <div>3</div>
-      <div>Li</div>
-      <div></div>
-    </div>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="table">
+      <div id="H" class="box first">
+        <div>1</div>
+        <div>H</div>
+        <div>Гідроген</div>
+      </div>
 
-    <div id="Na" class="box">
-      <div>11</div>
-      <div>Na</div>
-      <div></div>
+      <div id="He" class="box eighteenth">
+        <div>2</div>
+        <div>He</div>
+        <div>Гелій</div>
+      </div>
+
+      <div id="Li" class="box first">
+        <div>3</div>
+        <div>Li</div>
+        <div>Літій</div>
+      </div>
+
+      <div id="Be" class="box second">
+        <div>4</div>
+        <div>Be</div>
+        <div>Берилій</div>
+      </div>
+
+      <div id="B" class="box thirteenth">
+        <div>5</div>
+        <div>B</div>
+        <div>Бор</div>
+      </div>
+
+      <div id="C" class="box fourteenth">
+        <div>6</div>
+        <div>C</div>
+        <div>Карбон</div>
+      </div>
+
+      <div id="N" class="box fifteenth">
+        <div>7</div>
+        <div>N</div>
+        <div>Нітроген</div>
+      </div>
+
+      <div id="O" class="box sixteenth">
+        <div>8</div>
+        <div>O</div>
+        <div>Оксиген</div>
+      </div>
+
+      <div id="F" class="box seventeenth">
+        <div>9</div>
+        <div>F</div>
+        <div>Флуор</div>
+      </div>
+
+      <div id="Ne" class="box eighteenth">
+        <div>10</div>
+        <div>Ne</div>
+        <div>Неон</div>
+      </div>
+
+      <div id="Na" class="box first">
+        <div>11</div>
+        <div>Na</div>
+        <div>Натрій</div>
+      </div>
+
+      <div id="Mg" class="box second">
+        <div>12</div>
+        <div>Mg</div>
+        <div>Магній</div>
+      </div>
+
+      <div id="Al" class="box thirteenth">
+        <div>13</div>
+        <div>Al</div>
+        <div>Алюміній</div>
+      </div>
+
+      <div id="Si" class="box fourteenth">
+        <div>14</div>
+        <div>Si</div>
+        <div>Силіцій</div>
+      </div>
+
+      <div id="P" class="box fifteenth">
+        <div>15</div>
+        <div>P</div>
+        <div>Фосфор</div>
+      </div>
+
+      <div id="S" class="box sixteenth">
+        <div>16</div>
+        <div>S</div>
+        <div>Сульфур</div>
+      </div>
+
+      <div id="Cl" class="box seventeenth">
+        <div>17</div>
+        <div>Cl</div>
+        <div>Хлор</div>
+      </div>
+
+      <div id="Ar" class="box eighteenth">
+        <div>18</div>
+        <div>Ar</div>
+        <div>Аргон</div>
+      </div>
+
+      <div id="K" class="box first">
+        <div>19</div>
+        <div>K</div>
+        <div>Калій</div>
+      </div>
+
+      <div id="Ca" class="box second">
+        <div>20</div>
+        <div>Ca</div>
+        <div>Кальцій</div>
+      </div>
+
+      <div id="Sc" class="box third">
+        <div>21</div>
+        <div>Sc</div>
+        <div>Скандій</div>
+      </div>
+
+      <div id="Ti" class="box fourth">
+        <div>22</div>
+        <div>Ti</div>
+        <div>Титан</div>
+      </div>
+
+      <div id="V" class="box fifth">
+        <div>23</div>
+        <div>V</div>
+        <div>Ванадій</div>
+      </div>
+
+      <div id="Cr" class="box sixth">
+        <div>24</div>
+        <div>Cr</div>
+        <div>Хром</div>
+      </div>
+
+      <div id="Mn" class="box seventh">
+        <div>25</div>
+        <div>Mn</div>
+        <div>Манган</div>
+      </div>
+
+      <div id="Fe" class="box eighth">
+        <div>26</div>
+        <div>Fe</div>
+        <div>Ферум</div>
+      </div>
+
+      <div id="Co" class="box ninth">
+        <div>27</div>
+        <div>Co</div>
+        <div>Кобальт</div>
+      </div>
+
+      <div id="Ni" class="box tenth">
+        <div>28</div>
+        <div>Ni</div>
+        <div>Нікель</div>
+      </div>
+
+      <div id="Cu" class="box eleventh">
+        <div>29</div>
+        <div>Cu</div>
+        <div>Купрум</div>
+      </div>
+
+      <div id="Zn" class="box twelfth">
+        <div>30</div>
+        <div>Zn</div>
+        <div>Цинк</div>
+      </div>
+
+      <div id="Ga" class="box thirteenth">
+        <div>31</div>
+        <div>Ga</div>
+        <div>Галій</div>
+      </div>
+
+      <div id="Ge" class="box fourteenth">
+        <div>32</div>
+        <div>Ge</div>
+        <div>Германій</div>
+      </div>
+
+      <div id="As" class="box fifteenth">
+        <div>33</div>
+        <div>As</div>
+        <div>Арсен</div>
+      </div>
+
+      <div id="Se" class="box sixteenth">
+        <div>34</div>
+        <div>Se</div>
+        <div>Селен</div>
+      </div>
+
+      <div id="Br" class="box seventeenth">
+        <div>35</div>
+        <div>Br</div>
+        <div>Бром</div>
+      </div>
+
+      <div id="Kr" class="box eighteenth">
+        <div>36</div>
+        <div>Kr</div>
+        <div>Криптон</div>
+      </div>
+
+      <div id="Rb" class="box first">
+        <div>37</div>
+        <div>Rb</div>
+        <div>Рубідій</div>
+      </div>
+
+      <div id="Sr" class="box second">
+        <div>38</div>
+        <div>Sr</div>
+        <div>Стронцій</div>
+      </div>
+
+      <div id="Y" class="box third">
+        <div>39</div>
+        <div>Y</div>
+        <div>Ітрій</div>
+      </div>
+
+      <div id="Zr" class="box fourth">
+        <div>40</div>
+        <div>Zr</div>
+        <div>Цирконій</div>
+      </div>
+
+      <div id="Nb" class="box fifth">
+        <div>41</div>
+        <div>Nb</div>
+        <div>Ніобій</div>
+      </div>
+
+      <div id="Mo" class="box sixth">
+        <div>42</div>
+        <div>Mo</div>
+        <div>Молібден</div>
+      </div>
+
+      <div id="Tc" class="box seventh">
+        <div>43</div>
+        <div>Tc</div>
+        <div>Технецій</div>
+      </div>
+
+      <div id="Ru" class="box eighth">
+        <div>44</div>
+        <div>Ru</div>
+        <div>Рутеній</div>
+      </div>
+
+      <div id="Rh" class="box ninth">
+        <div>45</div>
+        <div>Rh</div>
+        <div>Родій</div>
+      </div>
+
+      <div id="Pd" class="box tenth">
+        <div>46</div>
+        <div>Pd</div>
+        <div>Паладій</div>
+      </div>
+
+      <div id="Ag" class="box eleventh">
+        <div>47</div>
+        <div>Ag</div>
+        <div>Аргентум</div>
+      </div>
+
+      <div id="Cd" class="box twelfth">
+        <div>48</div>
+        <div>Cd</div>
+        <div>Кадмій</div>
+      </div>
+
+      <div id="In" class="box thirteenth">
+        <div>49</div>
+        <div>In</div>
+        <div>Індій</div>
+      </div>
+
+      <div id="Sn" class="box fourteenth">
+        <div>50</div>
+        <div>Sn</div>
+        <div>Станум</div>
+      </div>
+
+      <div id="Sb" class="box fifteenth">
+        <div>51</div>
+        <div>Sb</div>
+        <div>Стибій</div>
+      </div>
+
+      <div id="Te" class="box sixteenth">
+        <div>52</div>
+        <div>Te</div>
+        <div>Телур</div>
+      </div>
+
+      <div id="I" class="box seventeenth">
+        <div>53</div>
+        <div>I</div>
+        <div>Йод</div>
+      </div>
+
+      <div id="Xe" class="box eighteenth">
+        <div>54</div>
+        <div>Xe</div>
+        <div>Ксенон</div>
+      </div>
+
+      <div id="Cs" class="box first">
+        <div>55</div>
+        <div>Cs</div>
+        <div>Цезій</div>
+      </div>
+
+      <div id="Ba" class="box second">
+        <div>56</div>
+        <div>Ba</div>
+        <div>Барій</div>
+      </div>
+
+      <div id="La" class="box third">
+        <div></div>
+        <div>*</div>
+        <div>57–71</div>
+      </div>
+
+      <div id="Hf" class="box fourth">
+        <div>72</div>
+        <div>Hf</div>
+        <div>Гафній</div>
+      </div>
+
+      <div id="Ta" class="box fifth">
+        <div>73</div>
+        <div>Ta</div>
+        <div>Тантал</div>
+      </div>
+
+      <div id="W" class="box sixth">
+        <div>74</div>
+        <div>W</div>
+        <div>Вольфрам</div>
+      </div>
+
+      <div id="Re" class="box seventh">
+        <div>75</div>
+        <div>Re</div>
+        <div>Реній</div>
+      </div>
+
+      <div id="Os" class="box eighth">
+        <div>76</div>
+        <div>Os</div>
+        <div>Осмій</div>
+      </div>
+
+      <div id="Ir" class="box ninth">
+        <div>77</div>
+        <div>Ir</div>
+        <div>Іридій</div>
+      </div>
+
+      <div id="Pt" class="box tenth">
+        <div>78</div>
+        <div>Pt</div>
+        <div>Платина</div>
+      </div>
+
+      <div id="Au" class="box eleventh">
+        <div>79</div>
+        <div>Au</div>
+        <div>Аурум</div>
+      </div>
+
+      <div id="Hg" class="box twelfth">
+        <div>80</div>
+        <div>Hg</div>
+        <div>Меркурій</div>
+      </div>
+
+      <div id="Tl" class="box thirteenth">
+        <div>81</div>
+        <div>Tl</div>
+        <div>Талій</div>
+      </div>
+
+      <div id="Pb" class="box fourteenth">
+        <div>82</div>
+        <div>Pb</div>
+        <div>Плюмбум</div>
+      </div>
+
+      <div id="Bi" class="box fifteenth">
+        <div>83</div>
+        <div>Bi</div>
+        <div>Бісмут</div>
+      </div>
+
+      <div id="Po" class="box sixteenth">
+        <div>84</div>
+        <div>Po</div>
+        <div>Полоній</div>
+      </div>
+
+      <div id="At" class="box seventeenth">
+        <div>85</div>
+        <div>At</div>
+        <div>Астат</div>
+      </div>
+
+      <div id="Rn" class="box eighteenth">
+        <div>86</div>
+        <div>Rn</div>
+        <div>Радон</div>
+      </div>
+
+      <div id="Fr" class="box first">
+        <div>87</div>
+        <div>Fr</div>
+        <div>Францій</div>
+      </div>
+
+      <div id="Ra" class="box second">
+        <div>88</div>
+        <div>Ra</div>
+        <div>Радій</div>
+      </div>
+
+      <div id="Ac" class="box third">
+        <div></div>
+        <div>**</div>
+        <div>89–103</div>
+      </div>
+
+      <div id="Rf" class="box fourth">
+        <div>104</div>
+        <div>Rf</div>
+        <div>Резерфордій</div>
+      </div>
+
+      <div id="Db" class="box fifth">
+        <div>105</div>
+        <div>Db</div>
+        <div>Дубній</div>
+      </div>
+
+      <div id="Sg" class="box sixth">
+        <div>106</div>
+        <div>Sg</div>
+        <div>Сіборгій</div>
+      </div>
+
+      <div id="Bh" class="box seventh">
+        <div>107</div>
+        <div>Bh</div>
+        <div>Борій</div>
+      </div>
+
+      <div id="Hs" class="box eighth">
+        <div>108</div>
+        <div>Hs</div>
+        <div>Гасій</div>
+      </div>
+
+      <div id="Mt" class="box ninth">
+        <div>109</div>
+        <div>Mt</div>
+        <div>Майтнерій</div>
+      </div>
+
+      <div id="Ds" class="box tenth">
+        <div>110</div>
+        <div>Ds</div>
+        <div>Дармштадтій</div>
+      </div>
+
+      <div id="Rg" class="box eleventh">
+        <div>111</div>
+        <div>Rg</div>
+        <div>Рентгеній</div>
+      </div>
+
+      <div id="Cn" class="box twelfth">
+        <div>112</div>
+        <div>Cn</div>
+        <div>Коперницій</div>
+      </div>
+
+      <div id="Nh" class="box thirteenth">
+        <div>113</div>
+        <div>Nh</div>
+        <div>Ніхоній</div>
+      </div>
+
+      <div id="Fl" class="box fourteenth">
+        <div>114</div>
+        <div>Fl</div>
+        <div>Флеровій</div>
+      </div>
+
+      <div id="Mc" class="box fifteenth">
+        <div>115</div>
+        <div>Mc</div>
+        <div>Московій</div>
+      </div>
+
+      <div id="Lv" class="box sixteenth">
+        <div>116</div>
+        <div>Lv</div>
+        <div>Ліверморій</div>
+      </div>
+
+      <div id="Ts" class="box seventeenth">
+        <div>117</div>
+        <div>Ts</div>
+        <div>Теннессин</div>
+      </div>
+
+      <div id="Og" class="box eighteenth">
+        <div>118</div>
+        <div>Og</div>
+        <div>Оганесон</div>
+      </div>
     </div>
-  </div>
-</body>
+  </body>
 </html>
