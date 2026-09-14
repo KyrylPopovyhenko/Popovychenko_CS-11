@@ -1,0 +1,28 @@
+.table {
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(18, 75px);
+  grid-auto-rows: 75px;
+  gap: 4px;
+}
+
+.box {
+  border: 1px black solid;
+  text-align: center;
+}
+
+#H {
+  grid-column: 1;
+}
+
+#He {
+  grid-column: 18;
+}
+
+#Li {
+  grid-column: 1;
+}
+
+#Na {
+  grid-column: 1;
+}
