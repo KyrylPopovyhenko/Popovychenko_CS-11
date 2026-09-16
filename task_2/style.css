@@ -33,6 +33,8 @@
     border-radius: 30px;
     padding: 40px;
     justify-content: center;
+    border: 1px rgb(25, 26, 35) solid;
+    box-shadow: 0 4px 0 rgb(25, 26, 35);
 }
 
 .gt > div:nth-child(2){
