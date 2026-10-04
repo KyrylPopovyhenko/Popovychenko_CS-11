@@ -1,0 +1,240 @@
+@font-face {
+  font-family: "Accord";
+  src: url("./fonts/accord.ttf");
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("./fonts/Montserrat.ttf");
+}
+
+* {
+    box-sizing: border-box;
+    font-family: "Accord", sans-serif;
+}
+
+body {
+    width: calc(100% - 40px);
+    max-width: 1000px;
+    margin: 8px auto;
+    overflow-x: clip;
+}
+
+header>div {
+    margin-top: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+}
+
+header {
+    display: flex;
+    width: calc(50vw - 50%);
+    min-width: 350px;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    height: 550px;
+    background-image: url(img/la.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    border-radius: 45px;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.hero>div {
+    margin-left: 30px;
+    color: white;
+}
+
+.hero>div:first-child {
+    margin-bottom: 30px;
+    font-size: 64px;
+}
+
+.container {
+    display: flex;
+    margin-top: 100px;
+    background-color: #f2f2f2;
+    width: 50%;
+    height: 70px;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 15px;
+    margin-left: 30px;
+}
+
+button {
+    padding: 12px 30px;
+    border: none;
+    border-radius: 18px;
+    margin-right: 15px;
+    background-color: black;
+    color: white;
+}
+
+button:hover {
+    background-color: burlywood;
+    cursor: pointer;
+}
+
+.container input {
+    display: flex;
+    margin: 0 15px;
+    border-radius: 18px;
+    padding: 15px;
+    border: none;
+    width: 100%;
+    height: 38px;
+}
+
+.image-box {
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(3, 150px);
+    justify-content: space-around;
+    padding-top: 70px;
+    padding-bottom: 70px;
+
+    width: calc(100% - 40px);
+    max-width: 1000px;
+    margin: 50px auto 0;
+}
+
+.image-box>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+    clip-path: circle();
+}
+
+.background {
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    background-color: #FBECED;
+}
+
+.image-box>div>div:last-child {
+    margin-top: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.image-box>div>div {
+    margin-top: 20px;
+}
+
+.bottom-image {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    background-image: url(img/pexels-photo-325185.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    border-radius: 45px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.image2 {
+    background-image: url(img/low-angle-shot-facade-white-modern-building-blue-clear-sky.jpg);
+}
+
+.bottom>div:first-child {
+    font-size: 48px;
+    margin-top: 50px;
+}
+
+.gallery {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.gallery-img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 0.8;
+    object-fit: cover;
+    clip-path: none;
+}
+
+.imgtext {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    aspect-ratio: 1 / 0.55;
+    gap: 15px;
+}
+
+.imagekey {
+    background-image: url(img/wooden-keychain-white.jpg);
+    background-repeat: no-repeat;
+    background-size: 120%;
+    background-position: center;
+    border-radius: 30px;
+}
+
+.box {
+    display: flex;
+    background-color: #f0effd;
+    border-radius: 30px;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+}
+
+.box>div:first-child {
+    font-size: 48px;
+    font-weight: 500;
+}
+
+.box>div:nth-child(2) {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 15px;
+    color: grey;
+}
+
+li {
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+footer {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    background-color: #FBECED;
+
+    padding: 0 max(20px, calc((100vw - 1000px) / 2));
+}
+
+footer>div:first-child {
+    margin-top: 50px;
+    font-size: 48px;
+    align-self: flex-start;
+}
+
+.footerform {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 50px;
+    background-color: transparent;
+}
