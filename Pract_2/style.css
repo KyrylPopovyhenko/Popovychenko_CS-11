@@ -16,7 +16,7 @@
 body {
     width: calc(100% - 40px);
     max-width: 1000px;
-    margin: 8px auto;
+    margin: 8px auto 0;
     overflow-x: clip;
 }
 
@@ -235,6 +235,6 @@ footer>div:first-child {
 .footerform {
     width: 100%;
     margin-left: 0;
-    margin-top: 50px;
+    margin: 50px 0;
     background-color: transparent;
 }
