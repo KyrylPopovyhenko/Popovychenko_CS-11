@@ -1,0 +1,96 @@
+@font-face {
+  font-family: "Acumin";
+  src: url(fonts/acumin-pro-extra-condensed\ \(1\).otf);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+  background: #263149;
+  background: linear-gradient(180deg, rgba(38, 49, 73, 1) 0%, rgba(38, 49, 73, 1) 43%, rgba(202, 211, 230, 1) 43%, rgba(202, 211, 230, 1) 100%);
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  padding-block: 20px;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 68px;
+  font-family: Acumin, sans-serif;
+  font-weight: 700;
+  line-height: 60px;
+  margin: 40px 0;
+  letter-spacing: 3px;
+  color: white;
+}
+
+.icon {
+  width: 40px;
+}
+
+span {
+  color: red;
+}
+
+.container {
+  width: min(100% - 40px, 1200px);
+  margin-inline: auto;
+  display: flex;
+  gap: 20px;
+}
+
+.left, .right {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0;
+  gap: 20px;
+}
+
+.bottom, .top {
+  display: flex;
+  gap: 20px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  min-width: 0;
+  overflow: hidden;
+  aspect-ratio: 4 / 3.5;
+}
+
+.bottom .card, .top .card {
+  flex: 1;
+  min-width: 0;
+}
+
+.card img {
+  display: block;
+  width: 100%;
+  flex: 0 0 100%;
+  min-width: 0;
+  filter: brightness(0.7);
+}
+
+.text {
+  flex: 0 0 100%;
+  margin-left: -100%;
+  padding: 20px;
+  z-index: 1;
+  text-align: center;
+  font-family: Acumin, sans-serif;
+  color: white;
+  font-size: 64px;
+  font-weight: 600;
+  text-shadow: 0 2px 8px #0008;
+  letter-spacing: 3px;
+}
