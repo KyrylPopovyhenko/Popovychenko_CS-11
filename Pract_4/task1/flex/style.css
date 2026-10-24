@@ -1,0 +1,106 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #e5e5e5;
+    font-family: Arial, sans-serif;
+    padding: 40px 20px;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.title > div:first-child {
+    font-size: 48px;
+}
+
+.title > div:last-child {
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.content {
+    max-width: 1200px;
+    height: 800px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.left, .right {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 0;
+}
+
+.left > img {
+    flex: 1;
+    min-height: 0;
+    object-fit: cover;
+}
+
+.bottom {
+    display: flex;
+    flex: 1;
+    min-height: 0;
+}
+
+.top {
+    display: flex;
+    flex: 2;
+    min-height: 0;
+}
+
+.right > img {
+    object-fit: cover;
+    flex: 3;
+    min-height: 0;
+}
+
+.bottom > img, .top > img {
+    width: 50%;
+    object-fit: cover;
+}
+
+.bottom > img {
+    object-position: 75% center;
+}
+
+.text-box, .text-box-inverted {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.text-box {
+    background-color: #f58200;
+    color: white;
+}
+
+.text-box-inverted {
+    background-color: white;
+    color: black;
+}
+
+.text-box > div:first-child, .text-box-inverted > div:first-child {
+    font-size: 56px;
+    font-weight: 700;
+}
+
+.text-box-inverted > div:first-child {
+    color: #f58200;
+}
+
+.text-box > div:last-child, .text-box-inverted > div:last-child {
+    font-size: 16px;
+}

@@ -1,0 +1,88 @@
+
+@font-face {
+    font-family: "Acumin";
+    src: url("fonts/acumin-pro-extra-condensed (1).otf");
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    min-height: 100%;
+    background: linear-gradient(180deg, #263149 43%, #cad3e6 43%);
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    padding-block: 20px;
+}
+
+.title {
+    text-align: center;
+    font-size: 68px;
+    font-family: Acumin, sans-serif;
+    font-weight: 700;
+    line-height: 60px;
+    margin: 40px 0;
+    letter-spacing: 3px;
+    color: white;
+}
+
+.icon {
+    width: 40px;
+}
+
+span {
+    color: red;
+}
+
+.container {
+    max-width: 1200px;
+    height: 785px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.large {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.card {
+    display: grid;
+    min-width: 0;
+    min-height: 0;
+    overflow: hidden;
+}
+
+.card img, .card .text {
+    grid-area: 1 / 1;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    min-width: 0;
+    min-height: 0;
+    object-fit: cover;
+    filter: brightness(0.7);
+}
+
+.text {
+    display: grid;
+    place-items: center;
+    padding: 20px;
+    z-index: 1;
+    text-align: center;
+    font-family: Acumin, sans-serif;
+    color: white;
+    font-size: 64px;
+    font-weight: 600;
+    text-shadow: 0 2px 8px #0008;
+    letter-spacing: 3px;
+}
