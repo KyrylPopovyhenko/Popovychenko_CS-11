@@ -1,0 +1,127 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+}
+
+header img {
+    height: 30px;
+}
+
+body {
+    width: 100%;
+    font-family: Montserrat, sans-serif;
+}
+
+.hero {
+    min-height: 600px;
+    max-height: 800px;
+    display: flex;
+    align-items: center;
+    background-image: url("img/breadbg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position: 100% 80%;
+}
+
+.hero-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 24px;
+    display: grid;
+    grid-template-columns: 43% 57%;
+}
+
+.hero-content {
+    grid-column: 2;
+    max-width: 550px;
+}
+
+.hero-text h2 {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.hero-text h1 {
+    font-size: 100px;
+    line-height: 0.85;
+    font-weight: 900;
+    margin: 20px 0;
+    font-family: "Roboto Condensed", sans-serif;;
+}
+
+.hero-text p {
+    font-size: 13px;
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 90px;
+}
+
+.hero-grid h3 {
+    font-size: 19px;
+    margin-bottom: 20px;
+}
+
+.hero-grid p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+.call p {
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    text-underline-offset: 4px;
+    text-decoration-color: #f2962f;
+}
+
+.baking {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.baking h1 {
+    font-size: 40px;
+    margin: 60px 0;
+}
+
+.baking-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.grid-element {
+    display: flex;
+}
+
+.icon {
+    height: 60px;
+    padding-right: 30px;
+}
+
+.grid-element h3 {
+    margin-bottom: 15px;
+}
+
+.grid-element p {
+    line-height: 1.3;
+}
