@@ -1,3 +1,9 @@
+function calculateHeron(a, b, c) {
+        const p = (a + b + c) / 2;
+        const s = Math.sqrt(p * (p - a) * (p - b) * (p - c));
+
+        return s;
+    }
 
 //Калькулятор за формулою Герона
 const button = document.getElementById("calculate");
@@ -10,9 +16,7 @@ button.addEventListener("click", function() {
         document.getElementById("result").textContent = "Incorrect sides";
         return
     }
-    const p = (a + b + c) / 2;
-    const s = Math.sqrt(p * (p-a) * (p-b) * (p-c));
-
+    const s = calculateHeron(a, b, c);
     document.getElementById("result").textContent = s;
 });
 
@@ -50,4 +54,29 @@ button3.addEventListener("click", function() {
     const s = (a * height) / 2;
 
     document.getElementById("result3").textContent = s;
+});
+
+//За 3 сторонами і радіусом описаного кола
+const button4 = document.getElementById("calculate4");
+
+button4.addEventListener("click", function() {
+    const [a, b, c] = Array.from(document.querySelectorAll('.side3'), item => Number(item.value));
+    const r = Number(document.getElementById('radius').value);
+
+    if (a + b + c <= 2 * Math.max(a, b, c) || [a, b, c, r].some(val => val <= 0 || !Number.isFinite(val))) {
+        document.getElementById("result4").textContent = "Incorrect values";
+        return
+    }
+
+    const sHeron = calculateHeron(a, b, c);
+    const correctR = (a * b * c) / (4 * sHeron);
+
+    if (Math.abs(correctR - r) > 0.001) {
+        document.getElementById("result4").textContent = "Incorrect raidus";
+        return
+    }
+    
+    const s = (a * b * c) / (4 * r);
+
+    document.getElementById("result4").textContent = s;
 });
