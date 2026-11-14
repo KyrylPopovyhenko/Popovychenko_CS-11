@@ -72,7 +72,7 @@ button4.addEventListener("click", function() {
     const correctR = (a * b * c) / (4 * sHeron);
 
     if (Math.abs(correctR - r) > 0.001) {
-        document.getElementById("result4").textContent = "Incorrect raidus";
+        document.getElementById("result4").textContent = "Incorrect radius";
         return
     }
     
@@ -80,3 +80,101 @@ button4.addEventListener("click", function() {
 
     document.getElementById("result4").textContent = s;
 });
+
+// Перевірка на число-паліндром
+const button5 = document.getElementById("calculate5");
+
+button5.addEventListener("click", function() {
+    const number = document.getElementById('pali').value;
+
+    if (!Number.isInteger(Number(number)) || number === "" || Number(number) < 0) {
+        document.getElementById("result5").textContent = "Incorrect number";
+        return
+    }
+
+    for (let i = 0; i < number.length / 2; i++) {
+        if (number[i] !== number[number.length - 1 - i]) {
+            document.getElementById("result5").textContent = "Не паліндром";
+            return
+        }
+    }
+    
+    document.getElementById("result5").textContent = "Паліндром";
+})
+
+
+// Перевірка на анаграму
+const button6 = document.getElementById("calculate6");
+
+button6.addEventListener("click", function() {
+    const [word, word2] = Array.from(document.querySelectorAll('.word'), item => item.value.toLowerCase().trim());
+
+    if (word2 === "" || word === "") {
+        document.getElementById("result6").textContent = "Please enter two words";
+        return
+    }
+
+    const letters = word.split("").sort().join("");
+    const letters2 = word2.split("").sort().join("");
+
+    if (letters === letters2) {
+        document.getElementById("result6").textContent = "Анаграма";
+        return
+    } 
+
+    document.getElementById("result6").textContent = "Не анаграма";
+})
+
+// Число Фібоначі за кроком
+const button7 = document.getElementById("calculate7");
+
+button7.addEventListener("click", function() {
+
+    const key = Number(document.getElementById('step').value);
+
+    if (key <= 0 || !Number.isInteger(key) || !Number.isFinite(key)) {
+        document.getElementById("result7").textContent = "Incorrect number";
+        return
+    }
+
+    let a = 1;
+    let b = 1;
+
+    for (let i = 3; i <= key; i++) {
+        let c = a + b;
+        a = b;
+        b = c;
+
+    }
+
+    document.getElementById("result7").textContent = b;
+})
+
+// Число Фібоначі за кроком
+const button8 = document.getElementById("calculate8");
+
+button8.addEventListener("click", function() {
+
+    const key = Number(document.getElementById('value').value);
+
+    if (key <= 0 || !Number.isInteger(key) || !Number.isFinite(key)) {
+        document.getElementById("result8").textContent = "Incorrect number";
+        return
+    }
+
+    let a = 1;
+    let b = 1;
+
+    while (b < key) {
+        let c = a + b;
+        a = b;
+        b = c;
+    }
+    
+    if (b !== key) {
+        document.getElementById("result8").textContent = "Не у послідовності";
+        return
+    }
+
+    document.getElementById("result8").textContent = "У послідовності";
+})
